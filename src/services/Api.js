@@ -6,7 +6,7 @@ const instance = Axios.create({
 
 function responseSucess(data) {
   return {
-    sucess: true,
+    success: true,
     data,
   };
 }
