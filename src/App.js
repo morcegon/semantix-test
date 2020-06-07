@@ -11,12 +11,12 @@ function App() {
     <Router>
       <Normalize />
       <GlobalStyles />
+      <Sidebar />
       <main>
-        <section>
+        <section className="page">
           <Routes />
         </section>
       </main>
-      <Sidebar />
     </Router>
   );
 }
