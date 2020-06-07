@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 import colors from '../../styles/colors';
 
@@ -38,7 +38,8 @@ export const NavItem = styled(Link)`
   text-align: center;
   text-decoration: none;
 
-  &:hover {
+  &:hover,
+  &.is-active {
     background: rgba(255, 255, 255, 0.2);
   }
 
