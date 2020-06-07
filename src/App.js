@@ -12,7 +12,9 @@ function App() {
       <Normalize />
       <GlobalStyles />
       <main>
-        <Routes />
+        <section>
+          <Routes />
+        </section>
       </main>
       <Sidebar />
     </Router>
