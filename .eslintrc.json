@@ -8,7 +8,7 @@
     "eslint:recommended",
     "airbnb",
     "prettier",
-    "plugin:jest/recommended",
+    "plugin:jest/all",
     "plugin:testing-library/recommended",
     "plugin:react-hooks/recommended"
   ],
