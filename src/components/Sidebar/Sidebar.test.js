@@ -44,4 +44,20 @@ describe('sidebar component', () => {
     expect(links).toHaveLength(2);
     links.entries((link) => expect(link).toBeInTheDocument());
   });
+
+  it('can mark a nav item as active', () => {
+    expect.hasAssertions();
+
+    history.push('/');
+
+    const { container } = render(
+      <Router history={history}>
+        <Sidebar />
+      </Router>,
+    );
+
+    const activeItem = container.querySelector('.is-active');
+
+    expect(activeItem).toBeInTheDocument();
+  });
 });
