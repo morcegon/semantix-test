@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 import colors from '../../styles/colors';
@@ -22,4 +23,31 @@ export const Title = styled.h1`
   text-align: center;
 `;
 
-export const Nav = styled.nav``;
+export const Nav = styled.nav`
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+`;
+
+export const NavItem = styled(Link)`
+  align-items: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 3rem;
+  text-align: center;
+  text-decoration: none;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
+  svg {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+  }
+`;

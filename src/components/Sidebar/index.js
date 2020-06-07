@@ -1,8 +1,7 @@
 import React from 'react';
 import { IoLogoIonic, IoIosLeaf } from 'react-icons/io';
-import { Link } from 'react-router-dom';
 
-import { Container, Title, Nav } from './styles';
+import { Container, Title, Nav, NavItem } from './styles';
 
 const navItems = [
   {
@@ -19,9 +18,10 @@ const navItems = [
 
 const setNavItems = () =>
   navItems.map((item) => (
-    <Link key={item.link} to={item.link}>
+    <NavItem key={item.link} to={item.link}>
+      {item.icon}
       {item.label}
-    </Link>
+    </NavItem>
   ));
 
 function Sidebar() {
