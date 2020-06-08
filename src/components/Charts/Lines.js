@@ -30,8 +30,6 @@ function Chart({ data }) {
     <Line
       data={{ labels: [...new Set(labels)], datasets: dataSets }}
       options={{ responsive: true }}
-      height={200}
-      width={435}
     />
   );
 }

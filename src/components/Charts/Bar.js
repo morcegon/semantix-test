@@ -21,8 +21,6 @@ function Chart({ data }) {
       data={chartData}
       legend={{ display: false }}
       options={{ responsive: true }}
-      height={200}
-      width={435}
     />
   );
 }
