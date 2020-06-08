@@ -14,6 +14,14 @@ export const Container = styled.aside`
   padding: 1rem 0;
   position: fixed;
   top: 0;
+
+  @media (max-width: 425px) {
+    align-content: center;
+    flex-direction: initial;
+    height: initial;
+    padding: 0 1rem;
+    width: 100%;
+  }
 `;
 
 export const Title = styled.h1`
@@ -21,12 +29,22 @@ export const Title = styled.h1`
   font-weight: 400;
   margin-bottom: 4.5rem;
   text-align: center;
+
+  @media (max-width: 425px) {
+    align-items: center;
+    display: flex;
+    margin: 0 1rem 0 0;
+  }
 `;
 
 export const Nav = styled.nav`
   align-content: center;
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 425px) {
+    flex-direction: initial;
+  }
 `;
 
 export const NavItem = styled(Link)`
@@ -43,12 +61,18 @@ export const NavItem = styled(Link)`
     background: rgba(255, 255, 255, 0.2);
   }
 
-  &:not(:last-child) {
-    margin-bottom: 2rem;
+  @media (min-width: 426px) {
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
   }
 
   svg {
     font-size: 3.5rem;
     margin-bottom: 1rem;
+  }
+
+  @media (max-width: 425px) {
+    flex-direction: initial;
   }
 `;
