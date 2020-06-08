@@ -12,3 +12,11 @@ export const Container = styled.div`
   display: inline-block;
   padding: 2rem 1.5rem;
 `;
+
+export const Title = styled.div`
+  color: ${colors.green1};
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+`;
